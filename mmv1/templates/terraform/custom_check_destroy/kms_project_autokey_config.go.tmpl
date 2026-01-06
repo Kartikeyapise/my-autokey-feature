@@ -19,4 +19,8 @@ if v := res["key_project"]; v != nil {
 	return fmt.Errorf("ProjectAutokeyConfig still exists at %s", url)
 }
 
+if v := res["keyProjectResolutionMode"]; v != nil {
+	return fmt.Errorf("ProjectAutokeyConfig still exists at %s", url)
+}
+
 return nil
